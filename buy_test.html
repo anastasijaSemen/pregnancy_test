@@ -58,19 +58,36 @@
         <footer>
             <form id="payment" method="POST" action="https://formspree.io/anastasija.semen@gmail.com">
                 <fieldset>
+                        <legend>Choose a test</legend>
+                        <ol>
+                            <li>
+                                <input id="average_sensitivity" name="test" type="radio">
+                                <label for="average_sensitivity">Average sensitivity</label>
+                            </li>
+                            <li>
+                                <input id="double_test"  name="test" type="radio">
+                                <label for="double_test" >Double test </label>
+                            </li>
+                            <li>
+                                <input id="sensitive_test" name="test" type="radio">
+                                <label for="sensitive_test">Sensitive test</label>
+                            </li>
+                        </ol>
+                    </fieldset>
+                <fieldset>
                     <legend>Your details</legend>
                     <ol>
                         <li>
-                            <label for=name>Name</label>
-                            <input id=name name=name type=text placeholder="Full name" required autofocus>
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Name" required autofocus>
                         </li>
                         <li>
-                            <label for=email>Email</label>
-                            <input id=email name=email type=email placeholder="example@gmail.com" required>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="example@gmail.com" required>
                         </li>
                         <li>
-                            <label for=phone>Phone</label>
-                            <input id=phone name=phone type=tel placeholder="+380633343585" required>
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" type="tel" placeholder="+380633343585" required>
                         </li>
                     </ol>
                 </fieldset>
@@ -78,16 +95,16 @@
                     <legend>Delivery address</legend>
                     <ol>
                         <li>
-                            <label for=address>Address</label>
-                            <textarea id=address name=address rows=5 required></textarea>
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="5" required></textarea>
                         </li>
                         <li>
-                            <label for=postcode>Post code</label>
-                            <input id=postcode name=postcode type=text required>
+                            <label for="postcode">Post code</label>
+                            <input id="postcode" name="postcode" type="text" required>
                         </li>
                         <li>
-                            <label for=country>Country</label>
-                            <input id=country name=country type=text required>
+                            <label for="country">Country</label>
+                            <input id="country" name="country" type="text" required>
                         </li>
                     </ol>
                 </fieldset>
@@ -99,36 +116,36 @@
                                 <legend>Card type</legend>
                                 <ol>
                                     <li>
-                                        <input id=visa name=cardtype type=radio>
-                                        <label for=visa>VISA</label>
+                                        <input id="visa" name="cardtype" type="radio">
+                                        <label for="visa">VISA</label>
                                     </li>
                                     <li>
-                                        <input id=mastercard name=cardtype type=radio>
-                                        <label for=mastercard>Mastercard</label>
+                                        <input id="mastercard" name="cardtype" type="radio">
+                                        <label for="mastercard">Mastercard</label>
                                     </li>
                                     <li>
-                                        <input id=pryvat24 name=cardtype type=radio>
-                                        <label for=pryvat24>Pryvat24</label>
+                                        <input id="pryvat24" name="cardtype" type="radio">
+                                        <label for="pryvat24">Pryvat24</label>
                                     </li>
                                 </ol>
                             </fieldset>
                         </li>
                         <li>
-                            <label for=cardnumber>Card number</label>
-                            <input id=cardnumber name=cardnumber type=number required>
+                            <label for="cardnumber">Card number</label>
+                            <input id="cardnumber" name="cardnumber" type="number" required>
                         </li>
                         <li>
-                            <label for=secure>Security code</label>
-                            <input id=secure name=secure type=number required>
+                            <label for="secure">Security code</label>
+                            <input id="secure" name="secure" type="number" required>
                         </li>
                         <li>
-                            <label for=namecard>Name on card</label>
-                            <input id=namecard name=namecard type=text placeholder="Exact name as on the card" required>
+                            <label for="namecard">Name on card</label>
+                            <input id="namecard" name="namecard" type="text" placeholder="Exact name as on the card" required>
                         </li>
                     </ol>
                 </fieldset>
                 <fieldset>
-                    <button type=submit>Buy it!</button>
+                    <button type="submit">Buy it!</button>
                 </fieldset>
             </form>
             </form>
